@@ -5,7 +5,7 @@ from django.views.generic import ListView, CreateView, DetailView, UpdateView, D
 from menu.models import Drink, Coffee, Bubbletea
 
 
-class DrinkListView(ListView):  # bookmark_list.html
+class DrinkListView(ListView):  # drink_list.html
     model = Drink
     # paginate_by = 3
 
