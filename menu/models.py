@@ -15,5 +15,5 @@ class Coffee(Drink):
     pass
 
 
-class Bubbleteam(Drink):
+class Bubbletea(Drink):
     pass
