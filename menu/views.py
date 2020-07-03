@@ -13,15 +13,17 @@ class DrinkListView(ListView):  # drink_list.html
 class CoffeeCreateView(CreateView):  # bookmark_form.html - form 이름이 흔해서 아래처럼 create로 바꿔준 거
     model = Coffee
     fields = '__all__'  # ['category', 'name', 'price', 'image']
-    template_name = 'drink_create.html'
+    template_name = 'menu/drink_create.html'
     success_url = reverse_lazy('menu:list')
+    initial = {'category': 'Coffee'}
 
 
 class BubbleteaCreateView(CreateView):  # bookmark_form.html - form 이름이 흔해서 아래처럼 create로 바꿔준 거
     model = Bubbletea
     fields = '__all__'  # ['category', 'name', 'price', 'image']
-    template_name = 'drink_create.html'
+    template_name = 'menu/drink_create.html'
     success_url = reverse_lazy('menu:list')
+    initial = {'category': 'Bubbletea'}
 
 
 class DrinkUpdateView(UpdateView):
